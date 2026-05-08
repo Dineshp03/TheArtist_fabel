@@ -1,0 +1,6 @@
+*   [ ] Initialize Next.js project
+*   [ ] Install dependencies (Framer Motion, Zustand, Lucide React)
+*   [ ] Set up Tailwind CSS and global styles (Brutalist Minimalist Dark Theme)
+*   [ ] Build global layout (Navbar with Cart, Footer)
+*   [ ] Build Landing Page (Hero, Featured Categories, Trending Products)
+*   [ ] Verify responsive design and aesthetics

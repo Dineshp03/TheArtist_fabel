@@ -1,0 +1,200 @@
+export interface Review {
+    id: string;
+    user: string;
+    rating: number;
+    comment: string;
+    date: string;
+}
+
+export interface Product {
+    id: string;
+    name: string;
+    price: number;
+    category: "TOTE BAG" | "T-SHIRT";
+    img: string;
+    description: string;
+    tag?: string;
+    images: string[];
+    sizes: string[];
+    details: string[];
+    reviews: Review[];
+    stock: number;
+}
+
+export const products: Product[] = [
+    {
+        id: "p1",
+        name: "CORE TOTE / 01",
+        price: 3499,
+        category: "TOTE BAG",
+        img: "/assets/mockup/tote_01.png",
+        description: "A heavy-duty industrial tote designed for daily utility. Reinforced stitching and high-density canvas construction.",
+        tag: "NEW DROP",
+        images: [
+            "/assets/mockup/tote_01.png",
+            "/assets/mockup/tote_03.png"
+        ],
+        sizes: ["ONE SIZE"],
+        details: [
+            "100% Cotton Heavy Canvas",
+            "Reinforced handle loops",
+            "Internal pocket for essentials",
+            "Screen-printed FABEL logo"
+        ],
+        reviews: [
+            { id: "r1", user: "OPERATOR_09", rating: 5, comment: "EXCEPTIONAL DURABILITY. WITHSTOOD 12H INDUSTRIAL LOAD.", date: "2024-02-20" },
+            { id: "r2", user: "MINIMALIST_V1", rating: 4, comment: "STARK DESIGN. FITS THE ARCHIVE PERFECTLY.", date: "2024-02-22" }
+        ],
+        stock: 12
+    },
+    {
+        id: "p2",
+        name: "FABEL BOX T-SHIRT",
+        price: 1899,
+        category: "T-SHIRT",
+        img: "/assets/mockup/tee_bunny.jpg",
+        description: "Modular box-fit tee in premium heavy jersey. Minimalist aesthetic with a structural drape.",
+        tag: "BESTSELLER",
+        images: [
+            "/assets/mockup/tee_bunny.jpg",
+            "/assets/mockup/tee_girl.jpg"
+        ],
+        sizes: ["S", "M", "L", "XL"],
+        details: [
+            "240 GSM Heavy Jersey",
+            "Oversized boxy fit",
+            "Ribbed crew neck",
+            "Pre-shrunk fabric"
+        ],
+        reviews: [
+            { id: "r3", user: "ARCHIVIST", rating: 5, comment: "THE TEXTURE IS REMARKABLE. A TRUE COLLECTIVE PIECE.", date: "2024-02-24" }
+        ],
+        stock: 5
+    },
+    {
+        id: "p3",
+        name: "UTILITY BAG / BLK",
+        price: 4299,
+        category: "TOTE BAG",
+        img: "/assets/mockup/tote_final.png",
+        description: "Multi-functional utility bag with modular straps and high-capacity storage center.",
+        images: [
+            "/assets/mockup/tote_final.png",
+            "/assets/mockup/tote_person.png"
+        ],
+        sizes: ["ONE SIZE"],
+        details: [
+            "Nylon Ripstop material",
+            "Water-resistant coating",
+            "Adjustable tactical straps",
+            "Matte black hardware"
+        ],
+        reviews: [],
+        stock: 8
+    },
+    {
+        id: "p4",
+        name: "GHOST LOGO T-SHIRT",
+        price: 1499,
+        category: "T-SHIRT",
+        img: "/assets/mockup/tee_ko.jpg",
+        description: "Subtle tonal branding on a classic fit tee. The industrial 'Ghost' series logo is screen-printed for longevity.",
+        tag: "LIMITED",
+        images: [
+            "/assets/mockup/tee_ko.jpg"
+        ],
+        sizes: ["S", "M", "L", "XL"],
+        details: [
+            "100% Organic Cotton",
+            "Tonal pigment print",
+            "Soft-hand feel",
+            "Side-seam construction"
+        ],
+        reviews: [
+            { id: "r4", user: "TECH_OPS", rating: 5, comment: "BREATHABLE. OPTIMIZED FOR HIGH-OUTPUT TRANSMISSION.", date: "2024-02-25" }
+        ],
+        stock: 3
+    },
+    {
+        id: "p5",
+        name: "INDUSTRIAL TOTE / ORE",
+        price: 3899,
+        category: "TOTE BAG",
+        img: "/assets/mockup/tote_devil.jpg",
+        description: "Bold accent tote in 'Ore' neon. High visibility, high durability.",
+        tag: "NEW DROP",
+        images: [
+            "/assets/mockup/tote_devil.jpg"
+        ],
+        sizes: ["ONE SIZE"],
+        details: [
+            "High-viz pigment canvas",
+            "Extra wide shoulder straps",
+            "Internal key clip",
+            "Industrial safety stitching"
+        ],
+        reviews: [],
+        stock: 15
+    },
+    {
+        id: "p6",
+        name: "MONO LOGO T-SHIRT / WHT",
+        price: 1599,
+        category: "T-SHIRT",
+        img: "/assets/mockup/tee_coffee.png",
+        description: "Clean aesthetic white tee with monochrome FABEL typography.",
+        images: [
+            "/assets/mockup/tee_coffee.png",
+            "/assets/mockup/tee_coffee_alt.jpg"
+        ],
+        sizes: ["S", "M", "L", "XL"],
+        details: [
+            "Super-combed cotton",
+            "Bio-washed for softness",
+            "Anti-pilling treatment",
+            "Regular fit"
+        ],
+        reviews: [],
+        stock: 20
+    },
+    {
+        id: "p7",
+        name: "ARCHIVE TOTE / GRY",
+        price: 3299,
+        category: "TOTE BAG",
+        img: "/assets/mockup/tote_13.png",
+        description: "Stark grey archive tote with internal padded laptop sleeve.",
+        tag: "ARCHIVE",
+        images: [
+            "/assets/mockup/tote_13.png"
+        ],
+        sizes: ["ONE SIZE"],
+        details: [
+            "Padded laptop compartment",
+            "Brushed canvas exterior",
+            "Minimalist grey on grey branding"
+        ],
+        reviews: [],
+        stock: 7
+    },
+    {
+        id: "p8",
+        name: "RAW EDGE T-SHIRT / BLK",
+        price: 1999,
+        category: "T-SHIRT",
+        img: "/assets/mockup/tee_06.png",
+        description: "Deconstructed raw edge finish on premium heavyweight jersey.",
+        tag: "NEW DROP",
+        images: [
+            "/assets/mockup/tee_06.png"
+        ],
+        sizes: ["M", "L", "XL"],
+        details: [
+            "Raw-cut hem and sleeves",
+            "Overlock internal stitching",
+            "Heavyweight 280 GSM"
+        ],
+        reviews: [],
+        stock: 4
+    }
+];

@@ -1,0 +1,34 @@
+# Goal Description
+
+Build an audiophile e-commerce landing page with a minimalist, industrial "dark mode" aesthetic. We will set up the global layout (Navbar, Footer) and the main Landing Page content (Hero, Featured Categories, Trending Products).
+
+## User Review Required
+
+None for the initial setup.
+
+## Proposed Changes
+
+### Project Setup
+- Initialize Next.js project with App Router and Tailwind CSS
+- Install `framer-motion`, `zustand`, `lucide-react`
+- Setup custom Tailwind theme with deep carbon blacks (`#0F0F0F`) and neon orange (`#FF4500`) accents.
+
+### Global Layout
+- `src/components/layout/Navbar.tsx`: Responsive top navigation with logo, links, and cart icon.
+- `src/components/layout/Footer.tsx`: Minimalist footer.
+- `src/app/layout.tsx`: Root layout with dark mode styles and noise texture base.
+
+### Landing Page Content
+- `src/app/page.tsx`: Main page assembling the sections.
+- `src/components/customer/Hero.tsx`: High-impact hero section with staggered entrance.
+- `src/components/customer/FeaturedCategories.tsx`: Asymmetric grid highlighting Audio gear categories.
+- `src/components/customer/TrendingProducts.tsx`: Carousel/grid of mock products.
+
+## Verification Plan
+
+### Automated Tests
+- Type checking (`tsc --noEmit`).
+- Starting dev server and rendering the page natively.
+
+### Manual Verification
+- Review the aesthetic and responsive layout visually.
